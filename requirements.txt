@@ -1,2 +1,9 @@
 Appium-Python-Client==3.0.1
 pytest==8.0.0
+pytest-html==4.1.1 \
+pytest-json-report==1.5.0 \
+pandas==2.2.1 \
+matplotlib==3.8.4 \
+seaborn==0.13.2 \
+jupyterlab==4.1.5
+
