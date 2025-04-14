@@ -1,4 +1,4 @@
-Appium-Python-Client==3.0.1
+Appium-Python-Client>=3.0.0,<6.0.0
 pytest==8.0.0
 pytest-html==4.1.1
 pytest-json-report==1.5.0
