@@ -33,3 +33,19 @@ jobs:
       with:
         name: allure-results
         path: reports/allure-results/
+    
+    - name: 📥 Install Allure CLI
+      run: |
+        sudo apt-add-repository ppa:qameta/allure -y
+        sudo apt-get update
+        sudo apt-get install allure -y
+
+    - name: 🧾 Generate Allure HTML Report
+      run: |
+        allure generate reports/allure-results -o reports/allure-report --clean
+
+    - name: 🚀 Deploy Allure Report to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4.0.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: reports/allure-report
