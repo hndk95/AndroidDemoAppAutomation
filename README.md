@@ -2,6 +2,8 @@
 
 Automated mobile testing framework using **Python**, **Appium**, and **Pytest** with support for:
 
+[![Allure Report](https://img.shields.io/badge/Allure-Report-blue?logo=allure)](https://hndk95.github.io/AndroidDemoAppAutomation/)
+
 - 📦 Page Object Model (POM)
 - 🧪 Screenshot on failure
 - 📊 HTML & JSON test reports
